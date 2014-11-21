@@ -3,3 +3,6 @@
 .metadata/*
 .recommenders/*
 *.py[cod]
+/algorithm/.settings/*
+/algorithm/.classpath
+/algorithm/.project
