@@ -1,8 +1,6 @@
 /algorithm/bin/*
+/algorithm/.settings/*
 .idea/*
 .metadata/*
 .recommenders/*
 *.py[cod]
-/algorithm/.settings/*
-/algorithm/.classpath
-/algorithm/.project
