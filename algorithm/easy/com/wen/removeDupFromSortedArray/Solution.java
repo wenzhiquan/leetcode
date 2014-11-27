@@ -4,18 +4,31 @@ public class Solution {
 
     public int removeDuplicates(int[] A) {
     	
-    	if(A.length <= 1){
+    	if(A.length < 2){
     		return A.length;
     	}
     	
-    	int count = 0;
-    	
-    	for(int i=1;i<A.length;i++){
-    		if(A[i] == A[i-1]) count++;
-    		else A[i - count] = A[i];
+//    	int count = 0;
+//    	
+//    	for(int i=1;i<A.length;i++){
+//    		if(A[i] == A[i-1]) count++;
+//    		else A[i - count] = A[i];
+//    	}
+//    	
+//		return A.length - count;
+    	int len = 1, itor = 1;
+    	while(itor<A.length){
+    		if(A[itor] != A[len-1])
+    			A[len++] = A[itor];
+    		itor++;
     	}
     	
-		return A.length - count;
+    	for (int i = 0; i < A.length; i++) {
+			System.out.println(A[i]);
+		} 
+    	
+    	return len;
+    	
         
     }
 
