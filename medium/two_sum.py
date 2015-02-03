@@ -12,12 +12,12 @@ class Solution:
     def two_sum(self, num, target):
         if len(num) < 2:
             return None
-        tmp = {}
-        for i, j in enumerate(num):
-            if (target - j) in tmp and i != tmp[target-j]:
-                return tmp[target - j] + 1, i + 1
+        hashed = {}
+        for index, value in enumerate(num):
+            if target - value in hashed and index != hashed[target - value]:
+                return hashed[target - value] + 1, index + 1
             else:
-                tmp[j] = i
+                hashed[value] = index
         return None
 
 
