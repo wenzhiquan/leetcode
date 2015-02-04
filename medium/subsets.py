@@ -11,6 +11,7 @@ class Solution:
         if not S:
             return [[]]
         else:
+            S.sort()
             pre_subsets = self.subsets(S[1:])
             return pre_subsets + [[S[0]] + elem for elem in pre_subsets]
 
