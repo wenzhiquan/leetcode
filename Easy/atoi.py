@@ -18,7 +18,7 @@ class Solution:
             i = 1
         MAX_INT = 2147483647
         MIN_INT = -2147483648
-        for i in xrange(i, len(str)):
+        for i in range(i, len(str)):
             if str[i].isdigit():
                 tmp += str[i]
             else:
@@ -34,4 +34,4 @@ class Solution:
 
 if __name__ == "__main__":
     so = Solution()
-    print so.atoi('-2')
+    print(so.atoi('-2'))

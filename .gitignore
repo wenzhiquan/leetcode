@@ -4,3 +4,4 @@
 .metadata/*
 .recommenders/*
 *.py[cod]
+.DS_Store
